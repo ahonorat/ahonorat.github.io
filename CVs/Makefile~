@@ -1,0 +1,6 @@
+SRCS:=$(wildcard *.tex)
+
+all: 
+
+%.pdf: %.tex
+	pdflatex $<

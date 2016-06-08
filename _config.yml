@@ -6,7 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Alexandre Honorat
+
+
+title: ~ahonorat website
 email: alexandre.honorat@yahoo.fr
 description: > # this means to ignore newlines until "baseurl:"
   This is my public site where you'll can find some information
@@ -17,3 +19,8 @@ github_username:  ahonorat
 
 # Build settings
 markdown: kramdown
+
+
+# My settings
+
+author: Alexandre Honorat

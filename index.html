@@ -4,20 +4,12 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Hello!</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p align="justify">
+    I am a Ph.D. student at the <a href="https://www.ietr.fr/">IETR</a> french laboratory,
+    working on dataflow models for high throughput computing (e.g. video decoding applications).
+    The main chalenge of this Ph.D. is to extend existing computation models to ease the development of embedded systems. On the software side it means that the model must be specific enough to capture interesting properties of the application, and simple enough to not become a burden for the developers. On the hardware side it must enable to schedule applications on heterogeneous multi-core systems with several constraints as latency, throughput, memory and energy consumption.
+  </p>
 
 </div>

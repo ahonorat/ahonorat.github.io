@@ -4,6 +4,4 @@ title: Publications
 permalink: /publications/
 ---
 
-## Publications I contributed to
-
-[A Stencil DSEL for Single Code Accelerated Computing with SYCL](https://hal.archives-ouvertes.fr/hal-01290099), Olivier Aumage, Denis Barthou, Alexandre Honorat, SYCL'16 First Workshop, Barcelona, Spain.
+See the HAL repository: [list of publications](https://hal.archives-ouvertes.fr/search/index/q/%2A/authIdHal_s/alexandre-honorat/).

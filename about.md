@@ -7,7 +7,7 @@ permalink: /about/
 
 ## Experience
 
-**Octobre 2017-present** *IETR/INSA, Ph.D. student, Rennes*
+**October 2017-present** *IETR/INSA, Ph.D. student, Rennes*
 
 - Ph.D. in dataflow models, directed by Jean-François Nézan and advised by Karol Desnos.
 Working on the [PREESM](http://preesm.sourceforge.net/website/) tool.

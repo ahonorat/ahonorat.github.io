@@ -6,7 +6,9 @@ permalink: /teaching/
 
 **Documents**
 
-- [Introduction très brève à la cognitique pour l'ergonomie des IHM informatiques](/docs/cognitique.pdf), in French.
+- [Introduction très brève à la cognitique pour l'ergonomie des IHM informatiques](/docs/cognitique.pdf) ([.tex](/docs/cognitique.tex)), in French.
+- [Révisions de Java et réflexions sur l'informatique](/docs/revisions.pdf) ([.tex](/docs/revisions.tex)), in French.
+
 
 **2019**
 

@@ -1,0 +1,177 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[french]{babel}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+
+
+\title{Introduction très brève à la cognitique pour l'ergonomie des IHM informatiques}
+\author{Alexandre Honorat}
+\date{Mars 2019}
+
+\begin{document}
+
+\maketitle
+
+Ce document est un résumé partiel du cours d'introduction à la cognitique donné par
+Benoît Le Blanc à l'ENSEIRB-MATMECA en 2013.
+Cette œuvre est mise à disposition sous licence
+Attribution - Pas d’Utilisation Commerciale 3.0 France.
+Pour voir une copie de cette licence, visitez \url{http://creativecommons.org/licenses/by-nc/3.0/fr/}
+ou écrivez à Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+
+\section{Qu'est-ce que la cognitique ?}
+
+Cognitique = Connaissances + Automatique
+
+Les connaissances sont très dépendantes du contexte, elles peuvent également être implicites (travaux d'Ikujiro Nonaka)
+ou communautaires (travaux d'{\' E}tienne Wenger). L'automatique est liée à la biologie de l'être humain, et notamment
+à sa mémoire. L'application de la cognitique va de la signalétique des aéroports au game-play des jeux vidéos.
+
+\subsection{Modèle de mémoire d'Endel Tulving}
+
+Les mémoires du type 1. à 4. (inclus) concernent les représentation tandis que le type 5., la mémoire procédurale,
+concerne les actions. Ce modèle n'est pas unique, ni figé : il permet seulement de distinguer sommairement
+les différentes connaissances que nous possédons. À noter que la mémoire à court terme est très limitée :
+on ne retient en moyenne que $7$ éléments, $10$ au maximum. Certaines techniques permettent d'améliorer cela,
+notamment en associant une image aux éléments à retenir, c.f.
+\href{https://fr.wikipedia.org/wiki/M\%C3\%A9thode_des_loci}{palais de la mémoire}.
+Enfin, la mémoire est beaucoup plus pérenne qu'on ne le pense, mais pour la retrouver il faut parfois
+se replacer dans le contexte dans lequel le souvenir a pu se former, c.f. article
+\href{https://lejournal.cnrs.fr/billets/nos-souvenirs-cest-du-solide}{«Nos souvenirs, c'est du solide !»}.
+
+
+\begin{enumerate}
+\item{Mémoire épisodique}
+\item{Mémoire à court terme}
+\item{Mémoire sémantique}
+\item{Représentations perceptives}
+\item{Mémoire procédurale}
+\end{enumerate}
+
+
+\subsection{Aide à la décision}
+
+Un des intérêts de l'ergonomie est de faciliter la prise de décision. Cette prise de décision
+peut être décomposée en quatre étapes intermédiaires.
+
+\begin{enumerate}
+\item{Perception (acquisition): représentation des connaissances, construction circonstancielle}
+\item{Compréhension (classification): activation des connaissances, construction permanente}
+\item{Raisonnement (inférence)}
+\item{Décision}
+\end{enumerate}
+
+Un exemple de mauvaise ergonomie est la présence d'une poignée ou d'une barre sur une porte qu'il faut pousser :
+la poignée ou la barre invite implicitement à tirer la porte vers soi, ce qui est l'opposé de l'action souhaitée.
+Cet exemple est tiré du livre \underline{The Designe of Everyday Things}, \textit{Donald A. Norman}, MIT Press
+(en anglais, ISBN : 978-0-262-52567-1).
+
+Notez que l'aide à la décision passe aussi par l'étude de tout ce qui \emph{n'aide pas} à la décision.
+Nous effectuons la plupart de nos décisions de manière très biaisée, c.f. notamment les travaux
+d'\href{https://fr.wikipedia.org/wiki/Heuristique_de_jugement}{Amos Tversky et de Daniel Kahneman}.
+En marketing, l'aide à la décision est très étudiée, mais pas forcément pour le bien du consommateur !
+Référence technique à ce sujet : \underline{Nos préférences sous influence}, \textit{Olivier Corneille}, Mardaga
+(ouvrage technique, ISBN : 978-2-8047-0031-7).
+
+
+\section{Interfaces Homme Machine (IHM)}
+
+
+Interface = Fonction + Contexte
+
+Le contexte dépend des cas d'usages, tandis que la fonction sont les tâches effectuées
+par la machine. L'utilisateur donne les commandes à la machine.
+
+\subsection{Conception des IHM}
+
+Pour concevoir une IHM, il faut avant tout connaître les automatismes que l'utilisateur a déjà,
+afin si possible de les réutiliser pour le guider, ou en tous cas, pour ne pas le perdre.
+
+\paragraph{Somatisation des informations :}
+De très nombreuses informations sont somatisées par haibtude. Par exemple l'ordre des chiffres sur un digicode
+d'immeuble ou de distributeur de billets est toujours le même sans que l'on s'en rende compte.
+Autre exemple, tous les plans de métro (excepté peut-être celui de la ligne B du métro de Rennes !)
+contiennent des lignes droites et non courbes, alors que cela ne correspond pas à la réalité ; mais c'est
+beaucoup plus facile à lire\footnote{À propos de la représentation des données, voir les travaux d'\href{https://en.wikipedia.org/wiki/Edward_Tufte}{Edward Tufte}.}.
+
+\paragraph{Quelques principes généraux de conception :}
+Mettre peu de texte, user des couleurs avec précautions (attention aux choix esthétiques et aux daltoniens),
+se focaliser sur le contexte d'usage, penser à l'évolution, limiter les informations non pertinentes
+(la mémoire à court terme ne peut contenir que $7$ éléments !), diminuer le temps d'exécution de la tâche
+(notamment pour éviter les erreurs d'innatention). Enfin, le principe anglo-saxon
+le plus connu pour le design : «~Less is best!~».
+
+
+\subsection{Vocabulaire}
+
+\paragraph{Utilisateur $\neq$ Usager :}
+L'utilisateur est lié à l'outil et à l'action tandis que l'usager est lié au service et à l'environnement.
+Par exemple le conducteur d'un bus est un utilisateur, mais les passagers sont des usagers.
+
+\paragraph{Utilité $\neq$ Utilisabilité :}
+L'utilité est la capacité de l'outil à aider dans une réalisation. L'utilisabilité correspond à la
+facilité d'emploi de l'outil. L'utilisabilité s'évalue par rapport à l'apprenabilité (du fonctionnement
+de l'outil), ainsi que par rapport à l'efficacité, l'efficience, et la satisfaction (telles que définies
+dans la norme ISO 9241).
+
+\section{Principales heuristiques pour les IHM informatiques (mais pas que)}
+
+Ces heuristiques ne sont évidemment pas les seules, et reposent sur l'expérimentation plutôt que sur la théorie.
+L'évaluation de la qualité des IHM est une tâche assez difficile. Toutefois pour l'informatique deux mesures simples
+peuvent être effectuées : le nombre de clics et la distance parcourue par la souris pour réaliser une tâche.
+
+\subsection{Critères ergonomiques de Dominique Scapin et Christian Bastien}
+
+Ces critères sont centrés sur l'humain (du point de vue
+biologique) et s'appliquent sur la tâche et son environnement, c.f. \href{https://hal.inria.fr/inria-00070012/fr/}{article original}.
+
+\begin{enumerate}
+\item{Guidage}
+\item{Charge de travail}
+\item{Contrôle explicit}
+\item{Adaptabilité}
+\item{Gestion des erreurs}
+\item{Homogénéïté et cohérence}
+\item{Signifiance des codes}
+\item{Compatibilité}
+\end{enumerate}
+
+\subsection{Règles d'or de Ben Schneiderman}
+
+Ces règles sont centrées sur l'utilisateur et sur
+l'expertise.
+
+\begin{enumerate}
+\item{Garder une cohérence}
+\item{Autoriser des raccourcies pour les habitués}
+\item{Fournir des retours informatifs (surtout pour les actions rares et majeures)}
+\item{Concevoir les dialogues autour de buts}
+\item{Offrir une gestion simple des erreurs}
+\item{Autoriser la réversibilité des actions}
+\item{Contribuer au sentiment de contrôle}
+\item{Réduire la charge mentale}
+\end{enumerate}
+
+\subsection{Heuristiques de Jakob Nielsen}
+
+\begin{enumerate}
+\item{L'état du système doit être visible}
+\item{Le système doit être le reflet du monde réel}
+\item{L'utilisateur doit garder le contrôle et être libre}
+\item{Être cohérent et respecter les standards}
+\item{Prévenir les erreurs}
+\item{Reconnaître plutôt que rappeler}
+\item{Flexibilité et efficacité}
+\item{Esthètique et minimalisme}
+\item{Aider l'utilisateur à reconnaître, diagnostiquer, et réparer les erreurs}
+\item{Aide en ligne et documentation}
+\end{enumerate}
+
+
+\end{document}

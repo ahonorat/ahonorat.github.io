@@ -137,6 +137,7 @@ public class MaClasse extends ClasseMere {
 
 
   public MaClasse() { // constructeur, initialise les attributs
+    super(); //appel du constructeur de ClasseMere
     maListe = new ArrayListListe<Integer>();
     nbInstances++;
   }
@@ -295,6 +296,7 @@ mère il faut précéder l'appel par le mot-clé \texttt{super} (qui permet auss
       MaClasse mc = (MaClasse) o; // cast vers un sous-type
       return mc.maListe.equals(this.maListe);
     }
+    return false;
   }
 \end{minted}
 \caption{Redéfinition classique de \texttt{equals}.

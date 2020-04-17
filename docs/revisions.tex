@@ -19,7 +19,7 @@
 
 \title{Révisions de Java et remarques diverses}
 \author{Alexandre Honorat}
-\date{Mai 2019}
+\date{Mai 2019, révisé en Avril 2020}
 
 \begin{document}
 
@@ -69,7 +69,7 @@ Les traitements fournis par une classe sont appelées méthodes.
 \subsection{Comment représenter un programme ?}
 
 Avant d'écrire un programme, il faut avoir une idée de ce qu'il va faire. Les représentations
-mathématiques des calculs à effecture sont les algorithmes\footnote{Vraissemblablement, le premier algorithme connu est celui
+mathématiques des calculs à effectuer sont les algorithmes\footnote{Vraissemblablement, le premier algorithme connu est celui
   d'Euclide, pour calculer le plus grand diviseur commun de deux nombres entiers. Toutefois, le mot algorithme est
   apparu bien plus tard et correspond au nom du scientifique perse \href{https://fr.wikipedia.org/wiki/Al-Khw\%C3\%A2rizm\%C3\%AE}{Al-Khwarizmi}}.
 Un programme Java est généralement constitué de plusieurs classes, contenant chacune plusieurs méthodes implantant des algorithmes.
@@ -232,7 +232,7 @@ et cela génère alors une \texttt{NullPointerException}.
 Par ailleurs il faut un et un seul point d'entrée du programme étant la méthode \texttt{main},
 attention à son prototype d'ailleurs,
 à écrirer dans n'importe quelle classe (généralement la classe correspondant à la structure
-de donnée la plus structurante). Le prototype d'une méthode est constitué de son type de retour,
+de donnée la plus globale). Le prototype d'une méthode est constitué de son type de retour,
 de son nom, du type et de l'ordre de ses arguments (mais pas leurs noms), et des éventuelles exceptions
 qu'elle génére. Pour faire simple, le prototype d'une méthode est la première ligne du code qui lui correspond.
 
@@ -263,7 +263,9 @@ les interfaces puisque seuls les prototypes sont déclarés dans l'interface. Lo
 il faut fournir le code des méthodes de l'interface. Enfin, à mi-chemin se trouvent les classes abstraites,
 qui ne fournissent que le prototype de certaines méthodes (déclarées \texttt{abstract}). Les classes abstraites
 et les interfaces ne peuvent pas être instanciées puisqu'elle ne contiennent pas tout le code des méthode abstraites
-qu'elles déclarent. De plus les interfaces n'ont pas de constructeurs ni d'attributs, seulement des méthodes \texttt{public}. Lorsqu'une classe normale hérite d'une classe abstraite, il faut obligatoirement écrire dans la classe fille le code des méthodes abstraites de la classe mère. Cela n'est en revanche pas obligatoire si une classe abstraite hérite d'une autre classe abstraite.
+qu'elles déclarent. De plus les interfaces n'ont pas de constructeurs ni d'attributs, seulement des méthodes \texttt{public}.
+Lorsqu'une classe normale hérite d'une classe abstraite, il faut obligatoirement écrire dans la classe fille
+le code des méthodes abstraites de la classe mère. Cela n'est en revanche pas obligatoire si une classe abstraite hérite d'une autre classe abstraite.
 
 
 Les relations possibles d'héritage sont résumées dans la table \ref{tab.heritage}.
@@ -339,7 +341,7 @@ tous les éléments du type spécifié ou dérivés de celui-ci peuvent être aj
   }
   
 \end{minted}
-\caption{Redéfinition classique de \texttt{equals}.
+\caption{Exemple de classe générique.
 \label{lst.generics}}
 \end{listing}
 
@@ -408,13 +410,13 @@ Ci-dessous les principales interfaces/implantations, toutes génériques, à con
 \item \texttt{Collection<>/}- : interface la plus générale dont les suivantes héritent/implantent ;
 \item \texttt{Set<>/HashSet<>} : ensemble au sens mathématique ;
 \item \texttt{List<>/ArrayList<>} : liste ordonnée ;
-\item \texttt{Map<>/HashMap<>} : annuaire, i.e. collections de couple clé-valeur avec clés uniques.
+\item \texttt{Map<>/HashMap<>} : dictionnaire, i.e. collection de couple clé-valeur avec clés uniques.
 \end{itemize}
 Il existe des versions triées de certaines collections : \texttt{TreeSet<>} et \texttt{TreeMap<>} stockent
 par ordre croissant (des clés pour les \texttt{Map}). Par ailleurs, l'interface \texttt{Collections} (attention au s)
 dispose d'une méthode \texttt{sort(List<T> list)} permettant de trier une liste (en place), ainsi que d'une
 surcharge pour utiliser un comparateur spécifique, \texttt{sort(List<T> list, Comparator<? super T> c)}\footnote{
-  \texttt{<? super T>} signifie qu'il doit s'agit de \texttt{T} ou de n'importe quelle classe située au-dessus de \texttt{T}
+  \texttt{<? super T>} signifie qu'il doit s'agir de \texttt{T} ou de n'importe quelle classe située au-dessus de \texttt{T}
   du point de vue de l'héritage. Les classes dérivées de \texttt{T} ne sont pas acceptées. C'est un point technique qu'il n'est pas
   nécessaire de comprendre.
 }.
@@ -449,7 +451,8 @@ Voir le TD associé. Principales classes et méthodes à connaître :
 \begin{itemize}
 \item \texttt{String.split(';')} : pour séparer une chaîne de caractères en sous-chaînes délimitées par \texttt{';'} dans ce cas, renvoie un tableau ;
 \item \texttt{Integer.parseInt(String entier)} : pour transformer une chaîne de caractère en \texttt{int}, idem pour les autres types primitifs ;
-\item \texttt{FileReader/FileWriter} : pour lire/écrire dans un fichier, attention à la gestion des exceptions, et on n'oublie pas de fermer le fichier après utilisation via \texttt{close()}, dans un bloc \texttt{finally} ;
+\item \texttt{FileReader/FileWriter} : pour lire/écrire dans un fichier, attention à la gestion des exceptions,
+  et on n'oublie pas de fermer le fichier après utilisation via \texttt{close()}, dans un bloc \texttt{finally} ;
 \item \texttt{InputStreamReader} : pour lire depuis une entrée utilisateur, notamment \texttt{System.in}, aussi à fermer après utilisation ;
 \item \texttt{BufferedReader} : pour lire une entrée ou un fichier ligne par ligne, aussi à fermer après utilisation.
 \end{itemize}
@@ -598,7 +601,7 @@ avec un algorithme similaire, où la liste des prochains nœuds à visiter est m
 Dans le cas dirigé et lorsque le graphe ne possède pas de cycle, on parle de Directed Acyclic Graph (DAG). Il est alors possible de
 calculer un ordre topologique $o : V \longmapsto \mathbb{N}$, c'est à dire une numérotation des nœuds qui garantit
 $(u,\, v) \in E \Longrightarrow o(u) < o(v)$, et par \href{https://fr.wikipedia.org/wiki/Fermeture_transitive}{fermeture transitive},
-que si un chemin existe entre $u$ et $v$, alors $o(u) < o(v)$.
+que si un chemin existe de $u$ vers $v$, alors $o(u) < o(v)$.
 Attention, plusieurs ordres topologiques peuvent exister pour un même DAG.
 
 
@@ -689,7 +692,7 @@ alors autant les outils dédiés à la programmation, tels que le langage
 \href{https://en.wikipedia.org/wiki/C_(programming_language)}{\texttt{C}} et le système d'exploitation \texttt{Unix}
 créé par \href{https://en.wikipedia.org/wiki/Dennis_Ritchie}{Dennis Ritchie}
 et \href{https://en.wikipedia.org/wiki/Ken_Thompson}{Ken Thompson}, que les outils liés à la communication, tels qu'Internet
-(dont un des contributeurs majeurs est \href{https://fr.wikipedia.org/wiki/Tim_Berners-Lee}{Time Berners-Lee}), 
+(dont un des contributeurs majeurs est \href{https://fr.wikipedia.org/wiki/Tim_Berners-Lee}{Tim Berners-Lee}), 
 que les algorithmes théoriques (comme ceux de \href{https://fr.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} et \href{https://fr.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport}).
 Knuth a par ailleurs inventé le langage de typographie \TeX, ensuite amélioré par Lamport pour donner la version moderne \LaTeX.
 Ce document, de même que la plupart des livres achetés en librairie, est écrit en \LaTeX~par exemple.
@@ -874,7 +877,7 @@ est libre de droits, mais pour demander l'implantation de fonctionnalités spéc
 payer. C'est le cas de \href{https://www.redhat.com/fr}{RedHat} (récemment rachetée par IBM), et de \href{https://www.canonical.com/}{Canonical}
 qui conçoivent les systèmes d'exploitations libres \href{https://getfedora.org/fr/}{fedora} et \href{https://www.ubuntu.com/download}{Ubuntu}, respectivement.
 Pour plus d'inspirations, vous pouvez regarder le documentaire \href{https://www.arte.tv/fr/videos/077346-000-A/internet-ou-la-revolution-du-partage/}{La bataille du libre}
-(disponible jusqu'à fin juillet sur Arte en version courte), qui parle par exemple des tracteurs John Deere, irréparables car leur code n'est pas libre.
+(en version courte), qui parle par exemple des tracteurs John Deere, irréparables car leur code n'est pas libre.
 
 
 \end{document}

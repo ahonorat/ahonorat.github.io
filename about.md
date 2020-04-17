@@ -55,24 +55,20 @@ to french engineering schools.
 |----------------------|-------------------|---------|
 |Programming languages | Parallelism tools | Various |
 |:---------------------|:------------------|:--------|
-|C/C++                 | SYCL              | Makefile, CMake, Maven |
-|JAVA                  | MPI               | Bash, tcsh             |
-|AADL                  | OpenMP            | Dot, gnuplot           |
-|SIGNAL                | OpenCL \*         | MySQL, CouchBase       |
-|LaTeX                 | StarPU \*         | Git, svn               |
+|JAVA                  | PREESM            | Makefile, CMake, Maven |
+|C/C++                 | MPI               | Bash, git, gnuplot     |
+|Python                | OpenMP            | LaTeX                  |
 
 
 ## Languages
 
 - French: *Native speaker*
 - English: *Good command, read, spoken and written (TOEIC: 920/990 – EU level: B2)*
-- German: *Good command, read and spoken*
+- German: *Fair command*
 
 ## Interests
 
-- Cinema: *Former member of the Enseirb-Matmeca movie association*
-- Piano: *Classical piano*
+- Cinema: *Former member of the Enseirb-Matmeca movie club*
+- Piano: *Classical piano (more than 20 years)*
 - Sport: *Moutain-biking*
 
-<sub>
-*: basic knowledge

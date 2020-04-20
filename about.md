@@ -9,8 +9,12 @@ permalink: /about/
 
 **October 2017-present** *IETR/INSA, Ph.D. student, Rennes*
 
-- Ph.D. in dataflow models, directed by Jean-François Nézan and advised by Karol Desnos.
+- Ph.D. on the SDF dataflow model, directed by Jean-François Nezan and advised by Karol Desnos.
 Working on the [PREESM](http://preesm.sourceforge.net/website/) tool.
+
+**November 2018** *IBM Research Labs, Visitor, Haifa*
+
+- Research visit to the team led by Michael Masin, in order to model scheduling of SDF graphs with Linear Programming.
 
 **October 2015—Septembre 2017** *INRIA, Research Engineer, Rennes*
 
@@ -55,9 +59,9 @@ to french engineering schools.
 |----------------------|-------------------|---------|
 |Programming languages | Parallelism tools | Various |
 |:---------------------|:------------------|:--------|
-|JAVA                  | PREESM            | Makefile, CMake, Maven |
-|C/C++                 | MPI               | Bash, git, gnuplot     |
-|Python                | OpenMP            | LaTeX                  |
+|JAVA                  | PREESM            | Linux   |
+|C/C++                 | MPI               | Eclipse |
+|Python                | OpenMP            | LaTeX   |
 
 
 ## Languages

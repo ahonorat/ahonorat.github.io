@@ -10,7 +10,7 @@ permalink: /about/
 **October 2017-present** *IETR/INSA, Ph.D. student, Rennes*
 
 - Ph.D. on the SDF dataflow model, directed by Jean-François Nezan and advised by Karol Desnos.
-Working on the [PREESM](http://preesm.sourceforge.net/website/) tool.
+Working on the [PREESM](https://preesm.github.io) tool.
 
 **November 2018** *IBM Research Labs, Visitor, Haifa*
 

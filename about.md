@@ -10,6 +10,7 @@ permalink: /about/
 **October 2017-present** *IETR/INSA, Ph.D. student, Rennes*
 
 - Ph.D. on the SDF dataflow model, directed by Jean-François Nezan and advised by Karol Desnos.
+Automatic configuration of an SDF image processing application to meet real-time constraints.
 Working on the [PREESM](https://preesm.github.io) tool.
 
 **November 2018** *IBM Research Labs, Visitor, Haifa*
@@ -19,7 +20,8 @@ Working on the [PREESM](https://preesm.github.io) tool.
 **October 2015—Septembre 2017** *INRIA, Research Engineer, Rennes*
 
 - Translation of real-time systems scheduling properties written in Architecture Analysis and Design Language (AADL)
-to SIGNAL, [implementation](http://polychrony.inria.fr/ADFG/) of algorithms for unconnected Ultimately Cyclo-Static DataFlow (UCSDF) graphs.
+to SIGNAL. [Implementation](http://polychrony.inria.fr/ADFG/) of algorithms to synthesize periods of Cyclo-Static DataFlow (CSDF) graphs
+to execute them on real-time systems.
 
 **February–July 2015** *INRIA, Intern, Bordeaux*
 

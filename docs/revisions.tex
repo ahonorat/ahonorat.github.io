@@ -19,7 +19,7 @@
 
 \title{Révisions de Java et remarques diverses}
 \author{Alexandre Honorat}
-\date{Mai 2019, révisé en Avril 2020}
+\date{Mai 2019, révisé en avril et décembre 2020}
 
 \begin{document}
 
@@ -754,11 +754,11 @@ ne va pas changer grand chose au pistage publicitaire : l'unicité de votre conf
 Mais voyons pire. L'informatique aime automatiser et rendre \og intelligents \fg~plein de programmes. Mais pour créer de tels programmes,
 il faut connaître une multitude de données et les saisir informatiquement. Rien de plus facile, il suffit
 d'acheter de la ressource humaine à prix coûtant, c'est ce qui est proposé par \href{https://www.mturk.com/}{Amazon Mechanical Turk}.
-Comment les pseudo \og intelligences artificielles \fg~sont-elles entraînées pour reconnaître des images ?
+Comment les intelligences \og artificielles \fg~ont-elles été entraînées pour reconnaître des images ?
 En partie sur le dos de travailleurs du clic qui classent des images à la main afin de pouvoir former les ensembles d'images étiquetées.
-Et encore, ceux-là sont payés. Pour pouvoir s'y authentifier et soi-disant afin de renforcer la sécurité en vérifiant qu'il ne s'agit pas d'un robot,
-certains sites sur Internet demandent de sélectionner les images correspondant à tel objet, et utilisent donc les images ainsi étiquetées.
-Ce n'est pas le seul domaine ou les sites profitent de l'utilisateur, cela a également été le cas pour le
+Et encore, ceux-là sont payés. Pour pouvoir s'y authentifier, certains sites sur Internet peuvent demander de sélectionner les images correspondant à tel objet.
+Le but peut être de renforcer la sécurité en vérifiant qu'il ne s'agit pas d'un robot, ou simplement d'utiliser les images ainsi étiquetées.
+Ce n'est pas le seul domaine où les sites profitent de l'utilisateur, cela a également été le cas pour le
 \href{https://www.lemonde.fr/pixels/article/2018/01/31/ces-logiciels-qui-utilisent-votre-ordinateur-pour-fabriquer-des-cryptomonnaies_5249816_4408996.html}{minage du Bitcoin},
 une crypto-monnaie très éthique assurément (et très écologique de surcroît).
 Le blanchiment d'argent tout le monde sait que c'est très éthique, encore plus quand les internautes du monde entier y participent.
@@ -786,20 +786,19 @@ que presque tous les philosoppes français considèrent comme dangereux\footnote
   Toutefois récemment, Alain Badiou a publié
   \href{https://www.lemonde.fr/series-d-ete-2018-long-format/article/2018/07/26/le-capitalisme-seul-responsable-de-l-exploitation-destructrice-de-la-nature_5336333_5325928.html?xtmc=badiou_capitalisme&xtcr=1}{une tribune}
   où il fait allusion aux \og impasses du transhumanisme \fg.
+  L'augmentation de l'être humain est aussi critiquée par d'autres philosophes, comme Michael J. Sandel
+  pour le \href{https://www.theatlantic.com/magazine/archive/2004/04/the-case-against-perfection/302927/}{cas de la génétique}.
 }.
-Par exemple certains transhumanistes croient que l'intelligence artificielle, et notamment les réseaux de neuronnes
-doivent à terme remplacer le cerveau humain. Mais c'est être bien optimiste quant à l'état d'avancement des réseaux
-de neuronnes qui fonctionnent bien pour classifier des images et relativement bien pour traduire des phrases, et ... c'est tout.
-Par ailleurs, il faut préciser que les réseaux de neuronnes actuels sont créés par des humains, et pour des humains.
-En France, le sujet est étudié par exemple par \href{https://fr.wikipedia.org/wiki/Jean-Gabriel_Ganascia}{Jean-Gabriel Ganascia},
-qui est (malheureusement ?) relativement optimiste et confiant sur le futur de l'intelligence artificielle. 
+Par exemple certains transhumanistes croient que l'intelligence artificielle
+doit à terme remplacer le cerveau humain.
 Larry Page et Sergey Brin, les deux co-fondateurs de Google, sont transhumanistes.
-Par pitié, ne devenez pas comme eux, et faites plutôt de la philosophie.
+En France, le sujet est étudié par exemple par \href{https://fr.wikipedia.org/wiki/Jean-Gabriel_Ganascia}{Jean-Gabriel Ganascia},
+qui est (malheureusement ?) relativement optimiste et confiant sur le futur de l'intelligence artificielle et de son rapport à l'éthique.
+Par pitié, faîtes un peu de philosophie avant de vouloir révolutionner le monde par l'informatique, ou par n'importe quelle science numérique.
 
 
 
 \subsection{Des programmes parfois mortels}
-
 
 Les erreurs des programmes informatiques, ou \og bugs \fg~(bogues en français), peuvent parfois coûter très cher voire tuer.
 L'un des exemples les plus connus est l'
@@ -822,7 +821,7 @@ excepté dans l'aéronautique et le médical.
 Mais quelles sont les origines de tels disfonctionnements et comment s'en prémunir ? Concernant les origines, il s'agit de mauvauses pratiques de gestion du
 personnel (quand on vous demande quelque chose d'impossible, le résultat n'est évidemment pas bon), et surtout de mauvaises pratiques de programmation.
 Bien coder est le sujet du génie logiciel : il faut que le code soit documenté, maintenable, et si possible modulaire et évolutif. Si on vous ennuie
-avec les commentaires, c'est pour que celui qui utilise votre code vous comprenne et ne fasse pas n'importe quoi avec\footnote{
+avec les commentaires, c'est pour que la personne utilisant votre code vous comprenne et ne fasse pas n'importe quoi avec\footnote{
   Imaginez un correcteur qui vous met $0$ car votre code est incompréhensible, c'est dommage mais ça arrive !
 }. Maintenant comment s'en prémunir ? On peut avoir un code propre mais non fonctionnel. Pour le certifier, on peut utiliser les \emph{méthodes formelles}.
 Les méthodes formelles prouvent mathématiquement qu'un programme informatique se comporte comme il le devrait : il respecte des spécifications\footnote{
@@ -835,9 +834,9 @@ pour la conception de systèmes aéronautiques) et \href{https://fr.wikipedia.or
 formellement certifié CompCert), tous deux professeurs au Collège de France.
 
 Petit aparté sur le sujet : la mode est maintenant d'utiliser l'intelligence artificielle et notamment les réseaux de neuronnes un peu partout.
-De par la nature même de ces réseaux, on ne sait pas certifier pour l'instant des programmes les utilisant. Donc si dans le futur proche vous
-montez dans une voiture autonome fonctionnant grâce à des réseaux de neuronnes, descendez-en de suite. Et vu la propension des constructeurs de voitures
-à tricher (DieselGate) et à incriminer les conducteurs, descendez vraiment le plus vite possible.
+On ne sait pas certifier, pour l'instant, des programmes utilisant de tels réseaux, notamment si configurés par apprentissage automatique.
+En particulier, vu la propension des constructeurs de voitures à tricher (DieselGate),
+prenez garde aux voitures autonomes bourrées de programmes non certifiés !
 
 
 
@@ -847,9 +846,9 @@ L'informatique n'est pas écologique, et ce pour au moins trois raisons : 1) les
 2) ces composants consomment et gaspillent de l'énergie, 3) le droit de la propriété intellectuelle.
 Les deux premiers points sont plutôt d'ordre matériel et en tant qu'informaticien, on ne peut pas y faire grand chose (sauf à utiliser
 l'\href{https://en.wikipedia.org/wiki/Approximate_computing}{approximate computing}).
-Les processeurs actuels sont gravés en $14$ nm (c'est la largeur des fils reliant les transistors), et sont donc très proches
-de la limite théorique de $7$ nm à partir de laquelle les effets quantiques provoquent trop d'erreurs de résultats, car cela ne correspond
-qu'à quelques dizaines d'atomes de large. La finesse de gravure permet
+Les processeurs actuels sont gravés en $10$ nm environ (c'est la largeur des fils reliant les transistors), et sont donc très proches
+de la limite théorique (de l'ordre du nm) à partir de laquelle les effets quantiques ne peuvent plus être négligés
+et provoquent trop d'erreurs de résultat. La finesse de gravure permet
 de limiter la déperdition d'énergie en chaleur par effet Joule. Toutefois la solution n'est peut-être pas seulement de limiter cette perte,
 mais aussi de la réutiliser pour du chauffage par exemple, technique malheureusement très très peu utilisée.
 
@@ -877,7 +876,7 @@ est libre de droits, mais pour demander l'implantation de fonctionnalités spéc
 payer. C'est le cas de \href{https://www.redhat.com/fr}{RedHat} (récemment rachetée par IBM), et de \href{https://www.canonical.com/}{Canonical}
 qui conçoivent les systèmes d'exploitations libres \href{https://getfedora.org/fr/}{fedora} et \href{https://www.ubuntu.com/download}{Ubuntu}, respectivement.
 Pour plus d'inspirations, vous pouvez regarder le documentaire \href{https://www.arte.tv/fr/videos/077346-000-A/internet-ou-la-revolution-du-partage/}{La bataille du libre}
-(en version courte), qui parle par exemple des tracteurs John Deere, irréparables car leur code n'est pas libre.
+(en version courte), qui parle par exemple des tracteurs John Deere, irréparables car le code de leurs composants électroniques n'est pas libre.
 
 
 \end{document}

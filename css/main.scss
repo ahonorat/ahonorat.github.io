@@ -53,23 +53,25 @@ $on-laptop:        800px;
 ;
 
 
-.container-img-index {
+.container-index {
   display: flex;
   align-items: center;
   justify-content: center
 }
 
-img {
-  max-width: 200px
+.container-img-index {
+    flex-basis: 40%
+}
+
+.container-text-index {
+  padding-top: 10px;
+  padding-left: 20px
 }
 
 .img-index {
-  flex-basis: 40%
+    max-width: 200px
 }
 
-.text-index {
-  padding-left: 20px;
-}
 
 
 

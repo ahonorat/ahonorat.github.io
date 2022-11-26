@@ -9,13 +9,12 @@
 
 
 title: ~ahonorat website
-email: alexandre.honorat@yahoo.fr
 description: > # this means to ignore newlines until "baseurl:"
   This is my public website where you can find some information
   about me and about projects I'm working on. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ahonorat.github.io" # the base hostname & protocol for your site
-github_username:  ahonorat
+github_username: ahonorat
 
 # Build settings
 markdown: kramdown
@@ -23,4 +22,6 @@ markdown: kramdown
 
 # My settings
 
-author: Alexandre Honorat
+author: Alexandre HONORAT
+email_perso: alex[....]e.hono[..]t@yahoo.fr
+

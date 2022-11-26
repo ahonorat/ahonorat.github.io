@@ -19,7 +19,7 @@
 
 \title{Révisions de Java et remarques diverses}
 \author{Alexandre Honorat}
-\date{Mai 2019, révisé en avril et décembre 2020}
+\date{Mai 2019, révisé en avril et décembre 2020, et en décembre 2022}
 
 \begin{document}
 
@@ -166,7 +166,6 @@ public class MaClasse extends ClasseMere {
   }
   
 }
-
 \end{minted}
 \caption{Syntaxe générale d'une classe Java.
 \label{lst.syntax}}
@@ -339,7 +338,6 @@ tous les éléments du type spécifié ou dérivés de celui-ci peuvent être aj
       MaClasse a = methode(1.0, 2.0F);
     }
   }
-  
 \end{minted}
 \caption{Exemple de classe générique.
 \label{lst.generics}}
@@ -716,17 +714,17 @@ ainsi que l'INRIA et le CEA.
 
 \section{Informatique et éthique (au sens large)}
 
-L'informatique a été au cœur d'une révolution technologique, qui n'est pas encore terminée.
-Toutefois cette révolution s'accompagne de son lot de bonnes et mauvaises pratiques. Voici quelques pistes
-pour comprendre et éviter de reproduire certaines des mauvaises pratiques \ldots
+L'informatique a été au cœur d'une révolution technologique encore en cours
+et qui s'accompagne de son lot de bonnes et mauvaises pratiques.
+Voici quelques réflexions personnelles non toujours dûment sourcées.
 
 
 \subsection{Un rapport ambigu à l'humanité}
 
 L'informatique a contribué au progrès technique essentiellement par les communications mondiales rendues possibles
 avec Internet, ainsi que par les innombrables calculs et autres simulations de systèmes mathématiques, physiques, chimiques ou économiques \footnote{
-  Une des premières simulations économiques a été réalisée par le Club de Rome en 1970, grâce à un programme informatique nommé
-  \href{https://fr.wikipedia.org/wiki/World3}{World3}. Les résultats étaient pour le moins inquiétants sur l'avenir de la planète \ldots
+  Une des premières simulations économiques globales a été réalisée par le Club de Rome en 1970, grâce à un programme informatique nommé
+  \href{https://fr.wikipedia.org/wiki/World3}{World3}. Les résultats étaient (déjà) inquiétants sur l'avenir de la planète \ldots
 }.
 Du côté social, Internet (et Wikipédia notamment) a eu une influence considérable (et majoritairement positive) sur l'éducation
 et la transmission du savoir. Diverses initiatives offrent des cours accessibles gratuitement, comme 
@@ -734,8 +732,8 @@ et la transmission du savoir. Diverses initiatives offrent des cours accessibles
 celle du \href{https://www.college-de-france.fr/site/college/index.htm}{Collège de France}, ou 
 \href{https://www.fun-mooc.fr/}{FUN}, une plus large regroupant des universités, écoles et centres de recherches français.
 Des projets collaboratifs ont également permis de surpasser en qualité les services proposés par des entreprises,
-comme \href{https://www.openstreetmap.org/}{OpenStreetMap} ;
-et maintenant les états ouvrent leurs données afin de mieux contrôler et coordonner \href{https://www.data.gouv.fr/fr/}{l'action publique}.
+comme \href{https://www.openstreetmap.org/}{OpenStreetMap} (pour sa précision);
+et maintenant les états ouvrent leurs données afin de mieux contrôler et coordonner \href{https://www.data.gouv.fr/}{l'action publique}.
 Voilà pour le côté positif.
 
 Maintenant le côté négatif. L'instigateur de l'iPhone, \href{https://fr.wikipedia.org/wiki/Jean-Marie_Hullot}{Jean-Marie Hullot}\footnote{
@@ -744,7 +742,7 @@ Maintenant le côté négatif. L'instigateur de l'iPhone, \href{https://fr.wikip
 }, a par exemple, lors d'une conférence, essuyé de nombreuses questions négatives sur l'addiction que provoquerait l'iPhone
 (ou plutôt les applications qui y sont installées) sur certains enfants. Et il est vrai que les applications mobiles, souvent gratuites,
 ne sont généralement pas les plus respectueuses de la vie privée. Quand on vous offre un service, c'est que vous êtes le produit.
-Les dérives vont du marketing agressif à l'espionnage (plus ou moins consenti) des employeurs, par exemple envers leurs employées
+Les dérives vont du marketing agressif à l'espionnage (plus ou moins consenti), par exemple des employeurs envers leurs employées
 \href{https://www.lemonde.fr/pixels/article/2019/04/12/aux-etats-unis-des-employeurs-font-main-basse-sur-les-donnees-des-applications-de-grossesse_5449283_4408996.html}{pour obtenir des informations sur leur grossesse}.
 Les techniques utilisées sont assez classiques, et la récente loi sur la protection des données qui oblige à paramétrer les \texttt{cookies}
 ne va pas changer grand chose au pistage publicitaire : l'unicité de votre configuration de navigateur Internet suffit :
@@ -756,11 +754,9 @@ il faut connaître une multitude de données et les saisir informatiquement. Rie
 d'acheter de la ressource humaine à prix coûtant, c'est ce qui est proposé par \href{https://www.mturk.com/}{Amazon Mechanical Turk}.
 Comment les intelligences \og artificielles \fg~ont-elles été entraînées pour reconnaître des images ?
 En partie sur le dos de travailleurs du clic qui classent des images à la main afin de pouvoir former les ensembles d'images étiquetées.
-Et encore, ceux-là sont payés. Pour pouvoir s'y authentifier, certains sites sur Internet peuvent demander de sélectionner les images correspondant à tel objet.
-Le but peut être de renforcer la sécurité en vérifiant qu'il ne s'agit pas d'un robot, ou simplement d'utiliser les images ainsi étiquetées.
-Ce n'est pas le seul domaine où les sites profitent de l'utilisateur, cela a également été le cas pour le
+Et encore, ceux-là sont payés, car certains sites profitent de l'utilisateur sans le lui dire comme cela a été le cas pour le
 \href{https://www.lemonde.fr/pixels/article/2018/01/31/ces-logiciels-qui-utilisent-votre-ordinateur-pour-fabriquer-des-cryptomonnaies_5249816_4408996.html}{minage du Bitcoin},
-une crypto-monnaie très éthique assurément (et très écologique de surcroît).
+une crypto-monnaie très éthique assurément (et très écologique de surcroît ...).
 Le blanchiment d'argent tout le monde sait que c'est très éthique, encore plus quand les internautes du monde entier y participent.
 
 
@@ -774,7 +770,7 @@ des sous-marins, bâteaux, ou avions furtifs. C'est le cas d'un des plus puissan
 l'enjeu principal, et les \og progrès \fg~réalisés sont imporants : presque n'importe quelle application de télécommunication peut être
 piratée, comme
 \href{https://www.lemonde.fr/pixels/article/2019/05/14/une-faille-de-securite-de-whatsapp-utilisee-pour-installer-un-logiciel-espion-israelien_5461861_4408996.html}{WhatsApp}
-récemment \footnote{L'application de communication la plus sécurisée actuellement semble être \href{https://signal.org/fr/}{Signal}.}.
+récemment \footnote{L'application de communication la plus sécurisée actuellement semble être \href{https://signal.org/}{Signal}.}.
 En France, c'est l'\href{https://www.ssi.gouv.fr/}{ANSSI}, en partie sous commandement militaire, qui se charge de surveiller le traffic et d'éviter les tentatives d'espionnage
 ou de déstabilisation des réseaux de télécommunications.
 
@@ -840,31 +836,29 @@ prenez garde aux voitures autonomes bourrées de programmes non certifiés !
 
 
 
-\subsection{Propriété intellectuelle et écologie}
+\subsection{Informatique et écologie}
 
-L'informatique n'est pas écologique, et ce pour au moins trois raisons : 1) les composants électroniques utilisent des matériaux rares,
-2) ces composants consomment et gaspillent de l'énergie, 3) le droit de la propriété intellectuelle.
-Les deux premiers points sont plutôt d'ordre matériel et en tant qu'informaticien, on ne peut pas y faire grand chose (sauf à utiliser
-l'\href{https://en.wikipedia.org/wiki/Approximate_computing}{approximate computing}).
-Les processeurs actuels sont gravés en $10$ nm environ (c'est la largeur des fils reliant les transistors), et sont donc très proches
-de la limite théorique (de l'ordre du nm) à partir de laquelle les effets quantiques ne peuvent plus être négligés
-et provoquent trop d'erreurs de résultat. La finesse de gravure permet
-de limiter la déperdition d'énergie en chaleur par effet Joule. Toutefois la solution n'est peut-être pas seulement de limiter cette perte,
-mais aussi de la réutiliser pour du chauffage par exemple, technique malheureusement très très peu utilisée.
+L'informatique actuelle n'est pas écologique, non seulement car la construction
+des processeurs et autres équipements électroniques est coûteuse en resources
+non renouvelables, mais aussi car ces équipements sont peu recyclables
+et nécessitent de l'énergie pour leur fonctionnement.
 
+Côté matériel par exemple les processeurs actuels sont gravés en $10$ nm environ (c'est la largeur des fils reliant les transistors),
+et sont donc très proches de la limite théorique (de l'ordre du nm) à partir de laquelle les effets quantiques ne peuvent
+plus être négligés et provoquent trop d'erreurs de résultat. La finesse de gravure permet
+de limiter la déperdition d'énergie en chaleur par effet Joule.
+Et quand on limite cette perte, gare aux effets rebonds.
+Toutefois la solution n'est peut-être pas seulement de limiter cette perte,
+mais aussi de la réutiliser pour \href{https://qarnot.com/fr}{du chauffage}
+par exemple, technique malheureusement très peu utilisée.
 
-Concernant le droit de la propriété intellectuelle, le problème est le suivant : le code informatique est hautement réutilisable,
+Il est aussi possible que le droit de la propriété intellectuelle empire les choses côté logiciel : le code informatique est hautement réutilisable,
 sauf si sa réutilisation est rendue impossible, par certains droits de propriétés ou par l'offuscation (\og obfuscation \fg~en anglais).
-Cela a une conséquence directe : des milliers d'informaticiens sont employés à recoder de l'existant, pour rien. Soit parce que la
+De nombreux informaticiens sont donc probablement employés à recoder de l'existant, pour rien. Soit parce que la
 licence du code original est trop restrictive, soit parce que le code original a été volontairement rendu illisible, en mettant
 des noms de variables aléatoires par exemple (c'est une des techniques d'offuscation). Par ailleurs, les algorithmes comme
 les formules mathématiques ne peuvent pas être brevetés, mais les procédés techniques qui les utilisent peuvent l'être. Il existe
 une exception à cette règle : les protocoles de télécommunications\footnote{Toc toc toc, c'est à l'armée ça, pas touche.}.
-Parfois les aberrations concernent également le matériel, comme les fibres optiques installées par les Fournisseurs
-d'Acccès à Internet (FAI), dont chaque câble contient en réalité quatre fibres, une par FAI\ldots \footnote{
-  Renseignements pris, le non-partage des infrasctures n'est pas imposé par la loi, mais la mutualisation des équipements
-  actifs est soumis à autorisation de l'autorité de la concurrence.
-}
 
 Au contraire, certaines associations et entreprises promeuvent les logiciels \og open source \fg, dont le code est libre.
 L'association la plus connue dans ce domaine est la \href{https://www.fsf.org/}{Free Software Fundation}, ainsi que
@@ -875,8 +869,14 @@ Des entreprises aussi entretiennent le logiciel libre : le code est public, l'ut
 est libre de droits, mais pour demander l'implantation de fonctionnalités spécifiques alors il faut
 payer. C'est le cas de \href{https://www.redhat.com/fr}{RedHat} (récemment rachetée par IBM), et de \href{https://www.canonical.com/}{Canonical}
 qui conçoivent les systèmes d'exploitations libres \href{https://getfedora.org/fr/}{fedora} et \href{https://www.ubuntu.com/download}{Ubuntu}, respectivement.
-Pour plus d'inspirations, vous pouvez regarder le documentaire \href{https://www.arte.tv/fr/videos/077346-000-A/internet-ou-la-revolution-du-partage/}{La bataille du libre}
+Pour plus d'inspirations, vous pouvez regarder le documentaire \href{https://www.labatailledulibre.org/}{La bataille du libre}
 (en version courte), qui parle par exemple des tracteurs John Deere, irréparables car le code de leurs composants électroniques n'est pas libre.
+
+Heureusement certains scientifiques s'intéressent à l'impact du numérique sur l'environnement.
+Notamment il existe le Groupement De Services (GDS) \href{https://ecoinfo.cnrs.fr/}{EcoInfo}
+en France, ainsi que quelques conférences internationales dédiées:
+\href{https://computingwithinlimits.org/}{LIMITS} et surtout
+\href{https://dblp.org/db/conf/ict4s/index.html}{ICT4S}.
 
 
 \end{document}

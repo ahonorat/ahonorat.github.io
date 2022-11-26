@@ -13,7 +13,7 @@ permalink: /teaching/
 
 - Java lessons (9h), lab work (7h30) and tutoring (5h) for 2nd year engineering students (~24 students) of [INSA Rennes](https://www.insa-rennes.fr/)
 - Student project supervision (8h) of four 3rd year engineering students of [INSA Rennes](https://www.insa-rennes.fr/) to implemenent
-  a light version of [This Is The Only Level]("https://armorgames.com/play/4309/this-is-the-only-level) in C.
+  a light version of [This Is The Only Level](https://armorgames.com/play/4309/this-is-the-only-level) in C.
 
 **2020**
 
